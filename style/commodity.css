@@ -12,8 +12,8 @@
 #boarddiv{
 	display: none;
 	background:#fff;
-	width:100px;
-	height:100px;
+	width:200px;
+	height:200px;
 	z-index:999;
 	position:absolute;
 	top:0;
@@ -22,12 +22,11 @@
 }
 #magnifier{
 	display: none;
-	height: 240px;
-	width: 240px;
+	height: 480px;
+	width: 480px;
 	position: absolute;
-	top: 130px;
+	top: 0px;
 	left: 500px;
-	background-size:50px;
 }
 .commodity-details-pic{
 	float: left;

@@ -65,22 +65,23 @@ $(document).ready(function(){
 				// if($(window).scrollTop()>235){
 				// 	$(this).moveStopEvent()
 				// }
-				console.log(e.pageY)
+				// console.log(e.pageY)
 				var x = e.pageX-$(this).offset().left
 				var y = e.pageY-$(this).offset().top
 
-				if(x<50){
-					x=50
-				}else if(x>450){
-					x=450
-				}else if(y<50){
-					y=50
-				}else if(y>450){
-					y=450
+				if(x<100){
+					x=100
+				}else if(x>400){
+					x=400
+				}
+				if(y<100){
+					y=100
+				}else if(y>400){
+					y=400
 				}
 
 
-				$("#boarddiv").css({"display":"block","left":x-50,"top":y-50})
+				$("#boarddiv").css({"display":"block","left":x-100,"top":y-100})
 				var boarX = $("#boarddiv").offset().left-$(this).offset().left	//方框距离父元素的left的距离
 				var boarY = $("#boarddiv").offset().top-$(this).offset().top	//方框距离父元素的TOP的距离
 
