@@ -1,4 +1,4 @@
-.main{
+.commodity-main{
 	width: 100%;
 	background: #fff;
 }
@@ -6,22 +6,44 @@
 /*详情区域，包括图片和文字简介*/
 .commodity-details{
 	width: 100%;
-	height:820px;
+	height:700px;
 }
 /*图片详情*/
+#boarddiv{
+	display: none;
+	background:#fff;
+	width:100px;
+	height:100px;
+	z-index:999;
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0.5;
+}
+#magnifier{
+	display: none;
+	height: 240px;
+	width: 240px;
+	position: absolute;
+	top: 130px;
+	left: 500px;
+	background-size:50px;
+}
 .commodity-details-pic{
-	width: 40%;
+	float: left;
+	width: 500px;
 	height: 100%;
+	position: relative;
 }
 /*大图展示*/
 .commodity-details-pic-big img{
-	width: 100%;
-	height: 100%;
+	width: 500px;
+	height: 500px;
 }
 .commodity-details-pic-big{
-	width: 456px;
-	height: 625px;
-	padding-left: 30px;
+	width: 500px;
+	height: 500px;
+	position: relative;
 }
 
 /*全部按钮区域*/
@@ -44,3 +66,90 @@
 	margin-bottom: 20px;
 }
 
+/*右边的商品描述*/
+.commodity-details-describe{
+	width: 700px;
+	height: 100%;
+	float: left;
+}
+/*商品标题*/
+.commodity-details-describe-title{
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px solid #999999;
+}
+.commodity-details-describe-title h2{
+	padding: 50px 0 0 10px;
+	font-weight: normal;
+}
+/*商品介绍*/
+.commodity-details-describe-introduce{
+	border-bottom: 1px solid #999999;
+	width: 100%;
+	height: 170px;
+	line-height: 20px;
+	font-size: 14px;
+	padding: 30px 0 0 10px;
+}
+.commodity-details-describe-introduce span{
+	display: block;
+	font-size: 20px;
+	color:rgb(250,60,0);
+	margin:20px 0 ;
+}
+.commodity-details-describe-introduce a:hover{
+	color: rgb(250,60,0);
+}
+.commodity-details-describe-choose{
+	width: 100%;
+	height:80px;
+	border-bottom: 1px solid #999999;
+}
+/*选择购买的颜色和尺寸*/
+.commodity-details-describe-choose button:focus{
+	outline:2px solid rgb(250,60,0);
+}
+.commodity-details-describe-choose .commodity-details-describe-choose-color,
+.commodity-details-describe-choose .commodity-details-describe-choose-size{
+	width: 100%;
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+	padding-left: 10px;
+}
+.commodity-details-describe-choose .commodity-details-describe-choose-color span,
+.commodity-details-describe-choose .commodity-details-describe-choose-size span{
+	display: inline-block;
+	width: 140px;
+}
+.commodity-details-describe-choose-color1,
+.commodity-details-describe-choose-color2,
+.commodity-details-describe-choose-size-xs,
+.commodity-details-describe-choose-size-s,
+.commodity-details-describe-choose-size-m,
+.commodity-details-describe-choose-size-xl,
+.commodity-details-describe-choose-size-l{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	border:none;
+}
+.commodity-details-describe-choose-size-xs,
+.commodity-details-describe-choose-size-s,
+.commodity-details-describe-choose-size-m,
+.commodity-details-describe-choose-size-xl,
+.commodity-details-describe-choose-size-l{
+	width: 40px;
+}
+.commodity-details-describe-choose-color1{
+	background: rgb(245,106,185);
+}
+.commodity-details-describe-choose-color2{
+	background: rgb(0,0,0);
+}
+
+/*添加购物车*/
+.commodity-details-describe-addcar-text{
+	
+}
