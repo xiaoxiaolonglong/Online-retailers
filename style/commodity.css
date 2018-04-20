@@ -1,0 +1,46 @@
+.main{
+	width: 100%;
+	background: #fff;
+}
+
+/*详情区域，包括图片和文字简介*/
+.commodity-details{
+	width: 100%;
+	height:820px;
+}
+/*图片详情*/
+.commodity-details-pic{
+	width: 40%;
+	height: 100%;
+}
+/*大图展示*/
+.commodity-details-pic-big img{
+	width: 100%;
+	height: 100%;
+}
+.commodity-details-pic-big{
+	width: 456px;
+	height: 625px;
+	padding-left: 30px;
+}
+
+/*全部按钮区域*/
+.commodity-details-pic-btn{
+	margin:20px 0 0 30px;
+}
+.commodity-details-pic-btn button{
+	margin-right: 40px;
+	background-color:#fff;
+}
+.commodity-details-pic-btn-group button{
+	border: 1px solid #999999;
+}
+.commodity-details-pic-btn-group button:focus{
+	outline: 1px solid rgb(250,60,0);
+}
+.ommodity-details-pic-btn-larger button{
+	outline: none;
+	border:0;
+	margin-bottom: 20px;
+}
+
